@@ -67,7 +67,8 @@ body {
     min-width: 428px;
 }
 
-html {
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body {
     font-family: var(--font-text);
     font-size: 1.25em;
     color: var(--black);
@@ -175,12 +176,11 @@ footer section {
 }
 footer small{
     display: block;
-    text-align: center;
     color: var(--green);
 }
 /*-------------------- MEDIA QUERY (small) --------------------------------*/
-body (min-width: 480px) {
-    #fruits {
+@media (min-width: 480px) {
+    main {
         grid-template-columns: 1fr;
     }
     figure ul {
@@ -189,8 +189,8 @@ body (min-width: 480px) {
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
-body (min-width: 768px) {
-    #fruits {
+@media (min-width: 768px) {
+    main {
         grid-template-columns: 1fr 1fr;
     }
     figure ul {
@@ -199,8 +199,8 @@ body (min-width: 768px) {
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-body (min-width: 1024px) {
-    #fruits {
+@media (min-width: 1024px) {
+    main {
         grid-template-columns: repeat(3, 1fr);
     }
     figure ul {
@@ -209,8 +209,8 @@ body (min-width: 1024px) {
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-body (min-width: 1440px) {
-    #fruits {
+@media (min-width: 1440px) {
+    main {
         grid-template-columns: repeat(4, 1fr);
     }
     figure ul {
