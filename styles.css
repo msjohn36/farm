@@ -91,6 +91,8 @@ h2 {
 }
 
 h3 {
+    display: block;
+    text-align: center;
     font-size: 1.25em;
     color: var(--black);
 }
@@ -105,11 +107,14 @@ header {
 header p {
     color: var(--white);
 }
-nav ul {
+nav, ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+    
 }
 
 nav a {
@@ -117,7 +122,8 @@ nav a {
     color: var(--white);
     font-weight: bold;
     background-color: var(--orange);
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 10px;
 }
 nav .top{
@@ -152,20 +158,22 @@ figure {
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 10px 40px 10px 10px;
+    position: relative;
+    z-index: 8;
 }
 #fruits span{
 	display: block;
 	font-weight: bold;
 	background-color: var(--black);
 	color: var(--white);
-	border-radius: 8px;
 	padding: 0.25rem;
+    
 }
 
 figure img {
     width: auto;
     height: auto;
-    border-radius: 4px;
 }
 
 footer section {
@@ -177,6 +185,7 @@ footer section {
 footer small{
     display: block;
     color: var(--green);
+    text-align: center;
 }
 /*-------------------- MEDIA QUERY (small) --------------------------------*/
 @media (min-width: 480px) {
@@ -188,7 +197,7 @@ footer small{
     }
 }
 
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+/* -------------------- MEDIA QUERY (medium) --------------------------------
 @media (min-width: 768px) {
     main {
         grid-template-columns: 1fr 1fr;
@@ -199,21 +208,21 @@ footer small{
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
     figure ul {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     main {
         grid-template-columns: repeat(4, 1fr);
     }
     figure ul {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} */ 
