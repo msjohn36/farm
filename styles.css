@@ -67,7 +67,6 @@ body {
     min-width: 428px;
 }
 
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 body {
     font-family: var(--font-text);
     font-size: 1.25em;
@@ -97,14 +96,24 @@ h3 {
     color: var(--black);
 }
 
-header {
-    text-align: center;
-    padding: 1rem;
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--green);
+    padding: 1rem;
     width: 100%;
+    text-shadow: 0 0 0.75rem black;
    
 }
 header p {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--green);
+    width: 100%;
+    padding: 1rem;
     color: var(--white);
 }
 nav, ul {
@@ -113,23 +122,33 @@ nav, ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    
+    gap: 2rem;   
 }
 
 nav a {
     text-decoration: none;
     color: var(--white);
-    font-weight: bold;
-    background-color: var(--orange);
-    padding: 10px;
     margin: 10px;
+    
+}
+nav .fruit {
+    background-color: var(--orange);
+    padding: 10px 78px;
+    border-radius: 10px;
+}
+nav .veg{
+    background-color: var(--orange);
+    padding: 10px 50px;
     border-radius: 10px;
 }
 nav .top{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 10px;
 }
 nav h2 {
     visibility: hidden;
@@ -140,10 +159,11 @@ main {
     gap: 1rem;
     padding: 1rem;
 }
-
+main h3{
+    padding: 20px;
+}
 section {
     padding: 1rem;
-
 }
 
 figure {
@@ -158,9 +178,6 @@ figure {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 10px 40px 10px 10px;
-    position: relative;
-    z-index: 8;
 }
 #fruits span{
 	display: block;
@@ -168,7 +185,6 @@ figure {
 	background-color: var(--black);
 	color: var(--white);
 	padding: 0.25rem;
-    
 }
 
 figure img {
@@ -187,42 +203,12 @@ footer small{
     color: var(--green);
     text-align: center;
 }
-/*-------------------- MEDIA QUERY (small) --------------------------------*/
-@media (min-width: 480px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    figure ul {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* -------------------- MEDIA QUERY (medium) --------------------------------
-@media (min-width: 768px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    figure ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/* Medium- min-width: 834px */
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/* @media (min-width: 1024px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    figure ul {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
+/* Large- min-width: 1280px */
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-/* @media (min-width: 1440px) {
-    main {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    figure ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-} */ 
+/* XL- min-width: 1440px */
