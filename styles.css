@@ -165,7 +165,11 @@ main h3{
 section {
     padding: 1rem;
 }
-
+.ffs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 figure {
     display: flex;
     justify-content: center;
@@ -215,17 +219,15 @@ footer small{
 div {
     display: flex;
     justify-content: center;
-    /* grid-template-columns: 1fr 1fr;
-    gap: 0; */
 }
 div dd {
     margin: 0;
-    /* grid-column-start: 2; */
   }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
 body {
     min-width: 834px;
 } 
+ 
 #fruits {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -238,11 +240,11 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 body {
     min-width: 1280px;
 }
-#fruits {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: 1;
@@ -270,3 +272,4 @@ body{
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
