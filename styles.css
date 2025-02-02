@@ -223,12 +223,50 @@ div dd {
     /* grid-column-start: 2; */
   }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
-/* body{
-    min-width: 834px
-}  */
-
+body {
+    min-width: 834px;
+} 
+#fruits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#veggies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/* Large- min-width: 1280px */
-
+body {
+    min-width: 1280px;
+}
+#fruits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#veggies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-/* XL- min-width: 1440px
+body{
+    min-width: 1440px;
+}
+#fruits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#veggies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
