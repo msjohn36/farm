@@ -86,7 +86,6 @@ h1 {
 
 h2 {
     font-size: 1.75em;
-    color: var(--black);
 }
 
 h3 {
@@ -148,7 +147,8 @@ nav .top{
     background-color: var(--orange);
     border-radius: 10px;
     margin: 10px;
-    padding: 20px 10px;
+    padding: 15px 5px;
+    border: 4px solid var(--white);
 }
 nav h2 {
     visibility: hidden;
@@ -167,48 +167,68 @@ section {
 }
 
 figure {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-#fruits figcaption {
-    font-weight: bold;
-    margin: 20px;
+figcaption {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     align-items: center;
-}
-#fruits span{
-	display: block;
-	font-weight: bold;
-	background-color: var(--black);
+    background-color: var(--black);
 	color: var(--white);
-	padding: 0.25rem;
+	padding: 1rem;
+    opacity: 0.75;
+    position: absolute;
+    z-index: 10;
 }
 
 figure img {
     width: auto;
     height: auto;
+    padding: 20px;
 }
 
 footer section {
-    text-align: center;
     padding: 1rem;
     background-color: var(--green);
     color: var(--white);
+    width: 100%;
+}
+footer h2 {
+    text-align: center;
+}
+footer address{
+    display: grid;
+    grid-template-rows:30px 1fr 1fr;
+    justify-content: center;
 }
 footer small{
     display: block;
     color: var(--green);
     text-align: center;
+   
 }
-
-/* -------------------- MEDIA QUERY (medium) --------------------------------
-/* Medium- min-width: 834px */
+div {
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr;
+    gap: 0; */
+}
+div dd {
+    margin: 0;
+    /* grid-column-start: 2; */
+  }
+/* -------------------- MEDIA QUERY (medium) -------------------------------- */
+/* body{
+    min-width: 834px
+}  */
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 /* Large- min-width: 1280px */
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-/* XL- min-width: 1440px */
+/* XL- min-width: 1440px
