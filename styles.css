@@ -66,7 +66,6 @@ table {
 body {
     min-width: 428px;
 }
-
 body {
     font-family: var(--font-text);
     font-size: 1.25em;
@@ -74,27 +73,22 @@ body {
     background-color: var(--white);
     padding: 1rem;
 }
-
 h1, h2, h3 {
     font-family: var(--font-heading);
 }
-
 h1 {
     font-size: 2.5em;
     color: var(--white);
 }
-
 h2 {
     font-size: 1.75em;
 }
-
 h3 {
     display: block;
     text-align: center;
     font-size: 1.25em;
     color: var(--black);
 }
-
 header h1 {
     display: flex;
     justify-content: center;
@@ -103,7 +97,6 @@ header h1 {
     padding: 1rem;
     width: 100%;
     text-shadow: 0 0 0.75rem black;
-   
 }
 header p {
     font-style: italic;
@@ -123,7 +116,6 @@ nav, ul {
     align-items: center;
     gap: 2rem;   
 }
-
 nav a {
     text-decoration: none;
     color: var(--white);
@@ -165,14 +157,12 @@ main h3{
 section {
     padding: 1rem;
 }
-
 figure {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
 figcaption {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +175,6 @@ figcaption {
     position: absolute;
     z-index: 10;
 }
-
 figure img {
     width: auto;
     height: auto;
@@ -198,31 +187,35 @@ footer section {
     color: var(--white);
     width: 100%;
 }
-footer h2 {
-    text-align: center;
+#foot {
+    display: flex;
+    flex-flow: column wrap;
 }
+#foot h2{
+ text-align: center;
+}
+
 footer address{
     display: grid;
     grid-template-rows:30px 1fr 1fr;
     justify-content: center;
+    padding: 10px;
+    margin: 10px;
 }
 footer small{
     display: block;
     color: var(--green);
     text-align: center;
-   
 }
 div {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 div dd {
-    margin: 0;
+    margin: 5px;
   }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
-
-  @media screen and (min-width: 834px){
- 
+@media screen and (min-width: 834px){
 #fruits {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -234,11 +227,14 @@ div dd {
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
+}
+#foot {
+    display: flex;
+    flex-flow: column wrap;
 }
 }
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width: 1280px){
-  
 #fruits {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -250,6 +246,10 @@ div dd {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+#foot {
+    display: flex;
+    flex-flow: column wrap;
 }
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
@@ -266,4 +266,9 @@ div dd {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+#foot {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 }
