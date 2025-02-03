@@ -155,7 +155,7 @@ main h3{
     padding: 20px;
 }
 section {
-    padding: 1rem;
+    padding: 20px;
 }
 figure {
     display: flex;
@@ -170,7 +170,7 @@ figcaption {
     align-items: center;
     background-color: var(--black);
 	color: var(--white);
-	padding: 1rem;
+	padding: 20px;
     opacity: 0.75;
     position: absolute;
     z-index: 10;
@@ -180,8 +180,12 @@ figure img {
     height: auto;
     padding: 20px;
 }
-
-
+footer section {
+    padding: 20px;
+    background-color: var(--green);
+    color: var(--white);
+    width: 100%;
+}
 footer small{
     display: block;
     color: var(--green);
@@ -193,12 +197,8 @@ footer small{
     align-items: center;
     gap: 20px;
     text-align: center;
-    width: 100%;
 }
-footer section {
-    padding: 20px;
-    background-color: var(--green);
-    color: var(--white);
+#address, #hour {
     width: 100%;
 }
 
@@ -223,13 +223,13 @@ footer section {
 }
 footer h3 {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 #hour {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    align-items: left;
+    align-items: center;
 }
 #hour div {
     display: contents;
@@ -256,13 +256,13 @@ footer h3 {
 }
 footer h3 {
     font-weight: bold;
-    text-align: left;
+    /* text-align: center; */
 }
 #hour {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    align-items: left;
+    /* align-items: center; */
 }
 #hour div {
     display: contents;
@@ -289,13 +289,13 @@ footer h3 {
 }
 footer h3 {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 #hour {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    align-items: left;
+    align-items: center;
 }
 #hour div {
     display: contents;
