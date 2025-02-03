@@ -181,39 +181,27 @@ figure img {
     padding: 20px;
 }
 
-footer section {
-    padding: 1rem;
-    background-color: var(--green);
-    color: var(--white);
-    width: 100%;
-}
-#foot {
-    display: flex;
-    flex-flow: column wrap;
-}
-#foot h2{
- text-align: center;
-}
 
-footer address{
-    display: grid;
-    grid-template-rows:30px 1fr 1fr;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
 footer small{
     display: block;
     color: var(--green);
     text-align: center;
 }
-div {
-    display: grid;
-    justify-content: center;
+#foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
 }
-div dd {
-    margin: 5px;
-  }
+footer section {
+    padding: 20px;
+    background-color: var(--green);
+    color: var(--white);
+    width: 100%;
+}
+
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
 @media screen and (min-width: 834px){
 #fruits {
@@ -228,9 +216,23 @@ div dd {
     grid-column-start: 1;
     grid-column-end: 2;
 }
-#foot {
-    display: flex;
-    flex-flow: column wrap;
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+footer h3 {
+    font-weight: bold;
+    text-align: left;
+}
+#hour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: left;
+}
+#hour div {
+    display: contents;
 }
 }
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
@@ -247,9 +249,23 @@ div dd {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-#foot {
-    display: flex;
-    flex-flow: column wrap;
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+footer h3 {
+    font-weight: bold;
+    text-align: left;
+}
+#hour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: left;
+}
+#hour div {
+    display: contents;
 }
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
@@ -266,9 +282,23 @@ div dd {
     grid-column-start: 1;
     grid-column-end: 4;
 }
-#foot {
-    display: flex;
-    flex-flow: column wrap;
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+footer h3 {
+    font-weight: bold;
+    text-align: left;
+}
+#hour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: left;
+}
+#hour div {
+    display: contents;
 }
 
 }
