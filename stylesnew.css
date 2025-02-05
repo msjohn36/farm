@@ -74,9 +74,6 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5em;
     color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-shadow: 0 0 0.75rem black;
 }
 h2 {
@@ -95,7 +92,6 @@ header {
 }
 header p {
     font-style: italic;
-    text-align: center;
     padding: 20px;
     color: var(--white);
     font-size: 0.8em;
@@ -122,15 +118,15 @@ nav a {
 }
 nav .fruit {
     background-color: var(--orange);
-    padding: 10px 102px;
-    border-radius: 10px;
-    border: 4px solid var(--white);
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: 2px solid var(--white);
 }
 nav .veg{
     background-color: var(--orange);
-    padding: 10px 75px;
-    border-radius: 10px;
-    border: 4px solid var(--white);
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--white);
 }
 nav .top{
     position: fixed;
@@ -185,13 +181,6 @@ footer section {
     text-align: center;
     padding: 20px;
 }
-#contact {
-    margin: 20px;
-    padding: 10px;
-}
-#hours {
-    margin: 20px 5px 20px 5px;
-}
 address span {
     display: block;
     margin: 10px;
@@ -223,11 +212,11 @@ footer small {
 }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
 @media screen and (min-width: 834px){
-   header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+       }
    header p {
     font-size: 1em;
    }
@@ -262,10 +251,22 @@ footer small {
 }
    /*-------------------- MEDIA QUERY (large) ------------------------------------*/
    @media screen and (min-width: 1280px){
-   /* header {
-    display: flex;
-    flex-wrap: wrap;
-   } */
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows:50px;
+        grid-template-areas: 
+        "a"
+        "b";
+    }
+    header h1 {
+        font-size: 2.25em;
+    }
+       header p{
+        grid-area: b;
+        text-align: left;
+        font-size: 0.8em;
+       }
     .fruit {
         position: absolute;
         top: 5px;
@@ -288,5 +289,38 @@ footer small {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    footer div {
+        display: grid;
+        grid-template-columns: 10fr 10fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+     #contact {
+        text-align: left;
+     }
    }
+   /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+   @media screen and (min-width: 1440px){
+    #fruits {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #veggies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    footer div {
+        display: grid;
+        grid-template-columns: 10fr 10fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+     #contact {
+        text-align: left;
+     }
+
 }
