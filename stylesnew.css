@@ -215,7 +215,6 @@ footer small {
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
        }
    header p {
     font-size: 1em;
@@ -322,5 +321,5 @@ footer small {
      #contact {
         text-align: left;
      }
-
+    }
 }
