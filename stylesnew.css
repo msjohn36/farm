@@ -210,4 +210,32 @@ footer small {
     padding: 10px 0 20px 0;
 }
 /* -------------------- MEDIA QUERY (medium) -------------------------------- */
+@media screen and (min-width: 834px){
+    header {
+        width: 100%;
+    }
+    header p {
+        display: inline-block;
+    }
+   nav, ul{
+    flex-direction: row;
+   }
+   .fruit {
+    margin: 40px 80px 20px 40px;
+   }
+   .veg {
+    margin: 40px 80px 20px 40px;
+   }
+    #fruits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #veggies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
